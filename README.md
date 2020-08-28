@@ -10,7 +10,7 @@ It requires python 3.x and the following Python packages:
 * [ccxt](https://github.com/ccxt/ccxt)
 * [simplejson](https://pypi.org/project/simplejson/)
 ```
-pip install ccxt TA-Lib
+pip install ccxt simplejson
 ```
 ![](https://github.com/HenrisonTao/ftx_grid_trading_bot/blob/master/sample.png)
 
