@@ -19,5 +19,5 @@ The program is suggested to run in the Linux platform; also, we need to edit som
 1. Edit some config settings in `setting.json.example` and rename it to `setting.json`.
 2. Run program
 ```
-	bash ./start.sh
+bash ./start.sh
 ```
