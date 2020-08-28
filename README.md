@@ -15,9 +15,9 @@ pip install ccxt TA-Lib
 ![](https://github.com/HenrisonTao/ftx_grid_trading_bot/blob/master/sample.png)
 
 ## Getting Started
-The program is suggested run in Linux platform, also we needs to edit some parameters. Follow the behind steps.
+The program is suggested to run in the Linux platform; also, we need to edit some parameters. Follow the behind steps. 
 1. Edit some config settings in `setting.json.example` and rename it to `setting.json`.
- 2. Running the program
+2. Run program
 ```
 	bash ./start.sh
 ```
