@@ -12,7 +12,7 @@ It requires python 3.x and the following Python packages:
 ```
 pip install ccxt TA-Lib
 ```
-
+![](https://github.com/HenrisonTao/ftx_grid_trading_bot/blob/master/sample.png)
 
 ## Getting Started
 The program is suggested run in Linux platform, also we needs to edit some parameters. Follow the behind steps.
