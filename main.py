@@ -96,6 +96,7 @@ class Grid_trader:
             except ccxt.NetworkError as e:
                 if i < tries - 1: # i is zero indexed
                     log("NetworkError , try last "+str(i) +"chances" + str(e))
+                    time.sleep(0.5)
                     continue
                 else:
                     log(str(e))
@@ -103,6 +104,7 @@ class Grid_trader:
             except ccxt.ExchangeError as e:
                 if i < tries - 1: # i is zero indexed
                     log(str(e))
+                    time.sleep(0.5)
                     continue
                 else:
                     log(str(e))
