@@ -15,7 +15,7 @@ pip install ccxt simplejson
 ![](https://github.com/HenrisonTao/ftx_grid_trading_bot/blob/master/sample.png)
 
 ## Getting Started
-The program is suggested to run in the Linux platform; also, we need to edit some parameters. Follow the behind steps. 
+The program is suggested to run in the Linux platform; also, you need to edit some parameters before program start. Follow the behind steps. 
 1. Edit some config settings in `setting.json.example` and rename it to `setting.json`.
 2. Run program
 ```
