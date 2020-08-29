@@ -95,17 +95,17 @@ class Grid_trader:
                     return None
             except ccxt.NetworkError as e:
                 if i < tries - 1: # i is zero indexed
-                    log("NetworkError , try last "+str(i) +"chances" + e)
+                    log("NetworkError , try last "+str(i) +"chances" + str(e))
                     continue
                 else:
-                    log(e)
+                    log(str(e))
                     raise
             except ccxt.ExchangeError as e:
                 if i < tries - 1: # i is zero indexed
-                    log(e)
+                    log(str(e))
                     continue
                 else:
-                    log(e)
+                    log(str(e))
                     raise
             break
 
