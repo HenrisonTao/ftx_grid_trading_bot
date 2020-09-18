@@ -55,19 +55,21 @@ class Grid_trader:
             order_info = self.send_request("get_order",order.id)
             side = order_info["side"]
             if order_info["status"] == "closed":
+                new_order_price = 0.0
                 old_order_id = order_info["id"]
                 bid_price, ask_price = self.send_request("get_bid_ask_price")
+                msg = side + " order id : " + str(old_order_id)+" : " + str(order_info["price"]) + " completed , put "
                 if side == "buy" :
                     new_order_price = float(order_info["price"]) + self.inteval_profit 
                     order.id = self.send_request("place_order","sell",new_order_price)
-                    msg = ("buy order id : " + str(old_order_id)+" : " +str(order_info["price"])  +" completed , put sell order "+str(order.id)+" : "+str(new_order_price))
+                    msg = msg + "sell"
                     log(msg)
                 else:
                     new_order_price = float(order_info["price"]) - self.inteval_profit
                     order.id = self.send_request("place_order","buy",new_order_price)
-                    msg = ("sell order id : "+ str(old_order_id)+" : "+ str(order_info["price"])  +" completed , put buy order id: "+str(order.id)+" : "+str(new_order_price))
-                    log(msg)
-
+                    msg = msg + "buy"
+                msg = msg + " order id : " + str(order.id) + " : " + str(new_order_price)
+                log(msg)
 
     def send_request(self,task,input1=None,input2=None):
         tries = 3
