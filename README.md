@@ -16,6 +16,7 @@ pip install ccxt simplejson
 
 ## Getting Started
 The program is suggested to run in the Linux platform; also, you need to edit some parameters before program start. Follow the behind steps. 
+**you should prepare the enough USD and spot for grid trading buying and selling . Futures do not need to prepare enough spot to sell.
 1. Edit some config settings in `setting.json.example` and rename it to `setting.json`.
 2. Run program
 ```
